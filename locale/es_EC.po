@@ -1,0 +1,43 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:nodux.account.in.invoice.to.draft.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "model:ir.action,name:"
+msgid "Draft Sale"
+msgstr "Pasar a borrador"
+
+msgctxt "model:ir.action,name:wizard_draft_in_invoice"
+msgid "Draft Supplier Invoice"
+msgstr "Factura de Compra a Borrador"
+
+msgctxt "model:nodux.account.in.invoice.to.draft.start,name:"
+msgid "In Invoice to Draft Start"
+msgstr "Factura Compra a Borrador"
+
+msgctxt "model:res.group,name:"
+msgid "Nodux - Compras a borrador"
+msgstr ""
+
+msgctxt "model:res.group,name:group_in_invoice_draft"
+msgid "Nodux - Factura de Proveedor a Borrador"
+msgstr ""
+
+msgctxt "view:nodux.account.in.invoice.to.draft.start:"
+msgid "Are you sure to draft those/this purchase(s)?"
+msgstr "¿Está seguro de pasar a borrador esta/estas compra(s)?"
+
+msgctxt "view:nodux.account.in.invoice.to.draft.start:"
+msgid "Draft Purchase"
+msgstr "Factura de Compra a borrador"
+
+msgctxt "wizard_button:nodux.account.in.invoice.to.draft,start,draft_:"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "wizard_button:nodux.account.in.invoice.to.draft,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.ui.view" id="in_invoice_to_draft_start_view_form">
+            <field name="model">nodux.account.in.invoice.to.draft.start</field>
+            <field name="type">form</field>
+            <field name="name">in_invoice_to_draft_start_form</field>
+        </record>
+
+        <record model="ir.action.wizard" id="wizard_draft_in_invoice">
+            <field name="name">Draft Supplier Invoice</field>
+            <field name="wiz_name">nodux.account.in.invoice.to.draft</field>
+        </record>
+
+        <record model="ir.action.keyword" id="act_wizard_draft_in_invoice_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">account.invoice,-1</field>
+            <field name="action" ref="wizard_draft_in_invoice"/>
+        </record>
+        <!-- Group -->
+        <record model="res.group" id="group_in_invoice_draft">
+            <field name="name">Nodux - Factura de Proveedor a Borrador</field>
+        </record>
+
+        <record model="res.user-res.group"
+            id="user_admin_group_in_invoice_draft">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_in_invoice_draft"/>
+        </record>
+
+        <record model="res.user-res.group"
+            id="user_trigger_group_in_invoice_draft">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_in_invoice_draft"/>
+        </record>
+
+
+    </data>
+</tryton>
