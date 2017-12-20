@@ -49,9 +49,9 @@ class Sale():
                 for invoice in sale.invoices:
                     if invoice.state == 'draft':
                         if not getattr(invoice, 'invoice_date', False):
-                            invoice.invoice_date = Date.today()
+                            invoice.invoice_date = sale.sale_date()
                         if not getattr(invoice, 'accounting_date', False):
-                            invoice.accounting_date = Date.today()
+                            invoice.accounting_date = sale.sale_date()
                         invoice.description = sale.reference
                         invoice.save()
                     invoice.number = sale.invoice_number_deleted
